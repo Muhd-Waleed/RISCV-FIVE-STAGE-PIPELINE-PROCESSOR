@@ -1,0 +1,25 @@
+package merl
+import chisel3._
+class Pc1 extends Module
+{
+	val io=IO(new Bundle{
+	//	val clock =Input(Bool())
+		var in=Input(UInt(32.W))
+		val out=Output(UInt(32.W))
+		val p  = Output(UInt(32.W))
+		
+})
+
+	val ad=Module(new Adder())
+	var reg=RegNext(0.U(32.W))
+//when(io.clock)
+//{
+	reg:=io.in
+//}
+	ad.io.a:=reg
+	ad.io.b:=4.U
+	io.out:=ad.io.sum
+	io.p := reg
+//}
+ 
+}
