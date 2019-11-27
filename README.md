@@ -1,2 +1,4 @@
 # RISCV-FIVE-STAGE-PIPELINE-PROCESSOR
-All hazards are resolved in this version
+MUHAMMAD WALEED WASEEM
+A five stage pipeline RISCV processor done with all major hazards (i.e Structural,Data and Control Hazards) by using Chisel.
+
